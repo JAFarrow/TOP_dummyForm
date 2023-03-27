@@ -17,19 +17,23 @@ input:focus {
     outline: none;
 }
 
+h1 {
+    font-size: 3.6rem;
+}
+
 h2 {
     font-size: 1.8rem;
 }
 
-h1 {
-    font-size: 3.6rem;
+h3 {
+  font-size: 1.6rem;
 }
 
 .viewPort {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 95vh;
     width: 100vw;
 }
 
@@ -151,4 +155,21 @@ input:focus {
 
 #logInLink:visited {
     color: var(--main-accent-color);
+}
+
+footer {
+  height: 5vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-bg-color);
+  color: var(--main-accent-color);
+  white-space: pre;
+}
+
+footer a {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: var(--main-accent-color);
 }
