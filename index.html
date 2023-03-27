@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js" defer></script>
     <title>Dummy Form</title>
   </head>
 
@@ -32,33 +33,33 @@
             <h2>Call To Action</h2>
           </div>
           <div id="firstNameSec">
-            <label for="firstName">FIRST NAME</label>
-            <input type="text" name="" value="" id="firstName">
+            <label for="firstName">* FIRST NAME</label>
+            <input type="text" name="" value="" id="firstName" required>
           </div>
           <div id="lastNameSec">
-            <label for="lastName">LAST NAME</label>
-            <input type="text" name="" value="" id="lastName">
+            <label for="lastName">* LAST NAME</label>
+            <input type="text" name="" value="" id="lastName" required>
           </div>
           <div id="emailSec">
-            <label for="email">EMAIL</label>
-            <input type="email" name="" value="" id="email">
+            <label for="email">* EMAIL</label>
+            <input type="email" name="" value="" id="email" required>
           </div>
           <div id="phone#Sec">
             <label for="phone#">PHONE NUMBER</label>
             <input type="number" name="" value="" id="phone#">
           </div>
-          <div id="pswrdSec" class="error">
-            <label for="pswrd">PASSWORD</label>
-            <input type="password" name="" value="" id="pswrd">
+          <div id="pswrdSec" id="pswrd">
+            <label for="pswrd">* PASSWORD</label>
+            <input type="password" name="" value="" id="pswrd" class="pswrdInput" required>
           </div>
-          <div id="pswrdValSec">
-            <label for="pswrdVal" class="error">CONFIRM PASSWORD</label>
-            <input type="password" name="" value="" id="pswrdVal">
+          <div id="pswrdValSec" id="pswrdVerif">
+            <label for="pswrVerif" class="error">* CONFIRM PASSWORD</label>
+            <input type="password" name="" value="" id="pswrdVerif" class="pswrdInput" required>
           </div>
         </form>
 
         <div class="formFooter">
-          <button type="" id="btn">Create Account</button>
+          <button type="submit" form="formGrid" id="btn">Create Account</button>
           <h4>Already have an account? <a href="" id="logInLink">Log In</a></h4>
         </div>
 
